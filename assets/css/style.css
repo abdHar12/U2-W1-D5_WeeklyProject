@@ -50,11 +50,9 @@ nav svg {
 nav li {
   display: inline-block;
 }
-.button-animated {
-  transition: background-color 1s;
-  background-color: green;
-}
-nav li:nth-of-type(5) > span {
+
+.get-started-button {
+  background-color: black;
   color: white;
   padding: 1.5rem;
   text-align: center;
@@ -66,7 +64,10 @@ nav li:nth-of-type(5) > span {
   transition: background-color 1s;
   background-color: white;
 }
-
+.button-animated {
+  transition: background-color 1s;
+  background-color: green;
+}
 header > div {
   width: 100%;
   display: flex;
@@ -159,6 +160,7 @@ header > div {
   flex-direction: row;
   padding-top: 5rem;
   position: relative;
+  align-items: flex-start;
 }
 #all-articles {
   display: flex;
@@ -188,6 +190,8 @@ aside {
   flex-direction: column;
   padding-left: 3rem;
   padding-top: 2rem;
+  position: sticky;
+  top: 91.4px;
 }
 
 aside ul {

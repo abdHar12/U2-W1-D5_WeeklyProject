@@ -19,16 +19,16 @@ const content = document.querySelector("#div-trending-on-medium ");
 window.addEventListener("scroll", () => {
   const elementBottom = elementToAnimate.getBoundingClientRect().bottom;
   const buttonBottom = button.getBoundingClientRect().bottom;
-  const h = document.body.offsetHeight;
-  //   const scrollPosition = window.scrollY;
+  //   const h = document.body.offsetHeight;
+  //   //   const scrollPosition = window.scrollY;
 
-  if (scrollPosition > content.getBoundingClientRect().bottom) {
-    elementToFix.classList.add("fixed");
-    elementToFix.style.bottom = toString(h - elementBottom) + "px";
-  } else {
-    elementToFix.classList.remove("fixed");
-    elementToFix.style.top = "auto";
-  }
+  //   if (scrollPosition > content.getBoundingClientRect().bottom) {
+  //     elementToFix.classList.add("fixed");
+  //     elementToFix.style.bottom = toString(h - elementBottom) + "px";
+  //   } else {
+  //     elementToFix.classList.remove("fixed");
+  //     elementToFix.style.top = "auto";
+  //   }
 
   if (elementBottom > buttonBottom) {
     elementToAnimate.classList.add("nav-animated");
