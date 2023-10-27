@@ -22,14 +22,14 @@ window.addEventListener("scroll", () => {
   //   const h = document.body.offsetHeight;
   //   const scrollPosition = window.scrollY;
 
-  if (scrollPosition > content.getBoundingClientRect().bottom) {
-    // elementToFix.classList.add("fixed");
-    elementToFix.style.top =
-      toString(h - content.getBoundingClientRect().bottom) + "px";
-  } else {
-    elementToFix.classList.remove("fixed");
-    elementToFix.style.top = "auto";
-  }
+  //   if (scrollPosition > content.getBoundingClientRect().bottom) {
+  //     // elementToFix.classList.add("fixed");
+  //     elementToFix.style.top =
+  //       toString(h - content.getBoundingClientRect().bottom) + "px";
+  //   } else {
+  //     elementToFix.classList.remove("fixed");
+  //     elementToFix.style.top = "auto";
+  //   }
 
   if (elementBottom > buttonBottom) {
     elementToAnimate.classList.add("nav-animated");
